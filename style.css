@@ -1,6 +1,8 @@
 .social {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  padding-bottom: 1.5%;
 }
 
 .navbar1 {
@@ -48,6 +50,13 @@
   font-style: normal;
   font-size: 20px;
   color: #4f4f4f;
+}
+
+.avatar {
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 5px;
+  border-color: rgb(143, 113, 220);
 }
 
 .techStack {
@@ -169,5 +178,22 @@
 
   .nav-link {
     padding-bottom: 3%;
+  }
+
+  .stackIcons {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    row-gap: 1%;
+  }
+
+  .avatar {
+    scale: 0.7;
+  }
+
+  .parDateFont {
+    font-size: 38px;
+  }
+
+  body {
   }
 }
