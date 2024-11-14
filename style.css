@@ -1,0 +1,173 @@
+.social {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar1 {
+  background-color: rgba(99, 87, 114, 0.132);
+  width: 100%;
+  padding-top: 1%;
+  padding-left: 2%;
+  padding-right: 10%;
+}
+.navbar-nav1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; /*between*/
+  margin: auto;
+  width: 100%;
+}
+
+.parDate {
+  margin: 0 auto;
+  margin-top: 15%;
+  width: 85.5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.parDateFont {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 58px;
+  color: #42446e;
+}
+
+.parDateFontSmall {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 32px;
+  color: #666666;
+}
+
+.parDateFontSmallest {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  color: #4f4f4f;
+}
+
+.techStack {
+  margin-top: 10%;
+  text-align: center;
+}
+
+.stackIcons {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-template-rows: auto auto;
+  row-gap: 15%;
+  margin: auto;
+  margin-top: 5%;
+  width: 77%;
+  justify-items: center;
+  align-items: center;
+}
+
+.projects {
+  width: 82.5%;
+  margin: auto;
+  min-width: 82.5%;
+}
+
+.card {
+  margin: 20px 5px;
+  border-radius: 5%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 100px 10px;
+}
+
+.projectsIcons {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 5%;
+  width: 85%;
+}
+
+.navPreDown {
+  display: flex;
+  margin: auto;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 84%;
+  margin-top: 10%;
+  align-items: center;
+}
+
+@keyframes girl-end {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(5%);
+  }
+}
+
+.picgirlend {
+  scale: 0.8;
+  animation-name: girl-end;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  z-index: 2;
+}
+
+@keyframes black-hole-transform {
+  from {
+    scale: 1;
+  }
+  to {
+    scale: 1.4;
+  }
+}
+.blackhole {
+  width: 10em;
+  height: 4.5em;
+  margin-top: -25%;
+  background: #000000;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.blackholestart {
+  animation-name: black-hole-transform;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@media (max-width: 1000px) {
+  body {
+    width: 100%;
+  }
+
+  .navbar-nav1 {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2%;
+  }
+  .social {
+    margin-bottom: 1%;
+  }
+  .parDate {
+    flex-direction: column;
+  }
+  .blackhole {
+    width: 7.5em;
+    height: 3.5em;
+    margin-top: -30%;
+    background: #000000;
+    border-radius: 50%;
+    z-index: 0;
+  }
+
+  .navPreDown {
+    flex-direction: column;
+  }
+
+  .nav-link {
+    padding-bottom: 3%;
+  }
+}
