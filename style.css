@@ -74,6 +74,7 @@
   width: 77%;
   justify-items: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .projects {
